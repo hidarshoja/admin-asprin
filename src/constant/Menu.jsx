@@ -1,9 +1,10 @@
 export const navigation = [
-    {
+  { name: "خانه", href: "/", current: false , src : "/img/home.svg" },
+  {
       name: "خدمات دهندگان",
       current: false, src :"/img/menu1.svg",
       children: [
-        { name: "خدمات", href: "/" },
+        { name: "خدمات", href: "/services" },
         { name: "تخصص و زیر تخصص", href: "/expertise" },
         { name: "امکانات", href: "/facility" },
         { name: "موقعیت", href: "/location" },
@@ -19,7 +20,7 @@ export const navigation = [
     },
   
     { name: "دپارتمان", href: "/department", current: false , src : "/img/menu3.svg" },
-    { name: "مقالات", href: "/articles", current: false , src : "/img/menu4.svg" },
+   
     {
       name: "دیدگاه",
       current: false, src :"/img/menu5.svg",
@@ -31,6 +32,6 @@ export const navigation = [
     { name: "اشتراک", href: "/subscription", current: false , src : "/img/menu6.svg" },
     { name: "مالی", href: "/financial", current: false , src :"/img/menu7.svg" },
    
-    { name: "پشتیبانی", href: "/support", current: false , src : "/img/menu8.svg" },
+    { name: "مدیریت خدمات دهندگان", href: "/serviceProviders", current: false , src : "/img/menu8.svg" },
     { name: "رمز عبور", href: "/password", current: false , src : "/img/menu9.svg" },
   ];

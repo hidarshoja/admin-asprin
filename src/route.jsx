@@ -20,6 +20,9 @@ import Login from "./pages/login/page";
 import EditExpertise from "./pages/EditingExpertise";
 import EditFacility from "./pages/EditFacility";
 import EditLocation from "./pages/EditLocation";
+import Dashboard from "./pages/Dashboard";
+import ServiceProviders from "./pages/ServiceProviders";
+import AddServices from "./pages/AddServices";
 
 export const route = createBrowserRouter([
     {
@@ -28,6 +31,10 @@ export const route = createBrowserRouter([
         children: [
             {
                 path: '/',
+                element: <Dashboard />
+            },
+            {
+                path: '/services',
                 element: <Services />
             },
             {
@@ -37,6 +44,14 @@ export const route = createBrowserRouter([
             {
                 path: '/edit-expertise',
                 element: <EditExpertise />
+            },
+            {
+                path: '/serviceProviders',
+                element: <ServiceProviders />
+            },
+            {
+                path: '/addServices',
+                element: <AddServices />
             },
             {
                 path: '/expertise',

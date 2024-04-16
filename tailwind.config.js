@@ -11,7 +11,8 @@ export default {
         "color2" :"#5B7380",
         "color3" :"#31546B",
         "color4" :"#354D5A",
-
+        "borderC" : "#BEBEBC",
+         "bgBtn"  : "#28448D"
       }
     },
   },
