@@ -76,7 +76,7 @@ function App() {
                       </div>
                     </Transition.Child>
 
-                    <div className="flex grow flex-col gap-y-5 overflow-y-auto bg-gray-900 px-6 pb-4 ring-1 ring-white/10">
+                    <div className="flex grow flex-col gap-y-5 overflow-y-auto bg-gray-300 px-6 pb-4 ring-1 ring-white/10">
                       <div className="flex h-16 shrink-0 items-center">
                         <img
                           className="h-8 w-auto"
@@ -93,14 +93,15 @@ function App() {
                             <ul role="list" className="-mx-2 space-y-1">
                               {navigation.map((item) => (
                                 <li key={item.name} className="flex items-start">
-                                  <img src={item.src} alt={item.name} className="w-6 h-6 mr-2" />
+                                  <img src={item.src} alt={item.name} className="w-6 h-6 mr-2 mt-2" />
                                   {!item.children ? (
                                     <Link
                                       to={item.href}
+                                      onClick={() => setSidebarOpen(false)}
                                       className={classNames(
                                         item.current
-                                          ? "bg-gray-50"
-                                          : "hover:bg-gray-50 hover:text-gray-700",
+                                          ? ""
+                                          : " hover:text-gray-700",
                                         "block rounded-md py-2 pr-2 pl-10 text-sm leading-6 font-semibold text-gray-700"
                                       )}
                                     >
@@ -113,8 +114,8 @@ function App() {
                                           <Disclosure.Button
                                             className={classNames(
                                               item.current
-                                                ? "bg-gray-50"
-                                                : "hover:bg-gray-50 hover:text-gray-700",
+                                                ? ""
+                                                : " hover:text-gray-700",
                                               "flex items-center justify-end w-full  rounded-md p-2 gap-x-3 text-sm leading-6 font-semibold text-gray-700"
                                             )}
                                           >
@@ -136,6 +137,7 @@ function App() {
                                             {item.children.map((subItem) => (
                                               <li key={subItem.name}>
                                                 <Disclosure.Button
+                                                 onClick={() => setSidebarOpen(false)}
                                                   as={Link}
                                                   to={subItem.href}
                                                   className={classNames(
