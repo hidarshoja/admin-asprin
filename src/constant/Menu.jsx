@@ -1,5 +1,5 @@
 export const navigation = [
-  { name: "خانه", href: "/", current: false , src : "/img/home.svg" },
+  { name: "خانه", href: "/", current: false , src : "/img/home.png" },
   {
       name: "خدمات دهندگان",
       current: false, src :"/img/menu1.svg",

@@ -25,42 +25,60 @@ const ResponseComment = () => {
                 <div className="bg-inherit rounded-full top-[-12px] px-2 text-[#708188] absolute">
                   نویسنده
                 </div>
-                <div className="flex flex-col lg:flex-row items-center">
-                  <div className="w-full lg:w-1/6 text-[#708188] text-[15px]">
-                    نام :
+                <form action="">
+                  <div className="w-full mt-3">
+                    <label
+                      htmlFor="email"
+                      className="block text-sm font-medium leading-4 text-color3"
+                    >
+                      نام :
+                    </label>
+                    <div className="mt-2">
+                      <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 pr-1 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                        placeholder="نام"
+                      />
+                    </div>
                   </div>
-                  <div className="w-full lg:w-5/6">
-                    <input
-                      type="text"
-                      className="w-full outline-none rounded-2xl bg-[#f0eeef] h-8 px-3 text-sm"
-                      placeholder="نام"
-                    />
+                  <div className="w-full mt-3">
+                    <label
+                      htmlFor="email"
+                      className="block text-sm font-medium leading-4 text-color3"
+                    >
+                      ایمیل :
+                    </label>
+                    <div className="mt-2">
+                      <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 pr-1 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                        placeholder="ایمیل"
+                      />
+                    </div>
                   </div>
-                </div>
-                <div className="flex flex-col lg:flex-row items-center mt-4">
-                  <div className="w-full lg:w-1/6 text-[#708188] text-[15px]">
-                    ایمیل :
+                  <div className="w-full mt-3">
+                    <label
+                      htmlFor="email"
+                      className="block text-sm font-medium leading-4 text-color3"
+                    >
+                      نشانه اینترنت :
+                    </label>
+                    <div className="mt-2">
+                      <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 pr-1 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                        placeholder="نشانه اینترنت"
+                      />
+                    </div>
                   </div>
-                  <div className="w-full lg:w-5/6">
-                    <input
-                      type="text"
-                      className="w-full outline-none rounded-2xl bg-[#f0eeef] h-8 px-3 text-sm"
-                      placeholder="ایمیل"
-                    />
-                  </div>
-                </div>
-                <div className="flex flex-col lg:flex-row items-center mt-4">
-                  <div className="w-full lg:w-1/6 text-[#708188] text-[15px]">
-                    نشانه اینترنت :
-                  </div>
-                  <div className="w-full lg:w-5/6">
-                    <input
-                      type="text"
-                      className="w-full outline-none rounded-2xl bg-[#f0eeef] h-8 px-3 text-sm"
-                      placeholder="نشانه اینترنت"
-                    />
-                  </div>
-                </div>
+
+                </form>
               </div>
             </div>
           </div>
@@ -82,7 +100,7 @@ const ResponseComment = () => {
             </div>
             <div>
               <div className="mt-4 w-full text-[#878787] text-[10px] px-4 flex flex-col gap-1">
-              <div> وضعیت :  تایید شده</div>
+                <div> وضعیت : تایید شده</div>
                 <div className="flex gap-2 items-center justify-start py-1">
                   <input
                     type="checkbox"
@@ -105,24 +123,27 @@ const ResponseComment = () => {
                   <span>زباله دان</span>
                 </div>
                 <div className="flex gap-2 items-center justify-between py-1">
-                 <img src="/img/calender.svg" alt="" />
+                  <img src="/img/calender.svg" alt="" />
                   <span>فرستاده شده در : اردیبهشت۱۶،۱۴۰۲ در </span>
                 </div>
                 <div className="flex gap-2 items-center justify-between py-1">
                   <span>۱۷:۵۴</span>
-                 <span className="w-16 h-5 border border-[#f0932c] rounded-lg text-[10px] text-[#878787] flex items-center justify-center">ویرایش</span>
+                  <span className="w-16 h-5 border border-[#f0932c] rounded-lg text-[10px] text-[#878787] flex items-center justify-center">
+                    ویرایش
+                  </span>
                 </div>
                 <div className="flex gap-2 items-center justify-start py-1">
                   <img src="/img/sms.svg" alt="" />
                   <span>در پاسخ به :‌ صنعت CGI‌در ایران</span>
-                
                 </div>
-                
               </div>
             </div>
             <div className="absolute flex items-center justify-between bottom-0 w-full border-t h-[35px] text-[#354d5a] text-[11px] rounded-b-lg px-3">
               <span className="text-[#d14045]">انتقال به زباله دان</span>
-              <span className="bg-[#ffac03] rounded-xl w-[74px] h-[22px] flex items-center justify-center cursor-pointer"> به روز رسانی</span>
+              <span className="bg-[#ffac03] rounded-xl w-[74px] h-[22px] flex items-center justify-center cursor-pointer">
+                {" "}
+                به روز رسانی
+              </span>
             </div>
           </div>
         </div>

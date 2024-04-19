@@ -6,7 +6,7 @@ import {
   Bars3Icon,
   XMarkIcon
 } from "@heroicons/react/24/outline";
-import { Link, Outlet, useLocation } from "react-router-dom";
+import { Link, Outlet, useLocation , NavLink } from "react-router-dom";
 import { navigation } from "./constant/Menu";
 
 
@@ -93,20 +93,24 @@ function App() {
                             <ul role="list" className="-mx-2 space-y-1">
                               {navigation.map((item) => (
                                 <li key={item.name} className="flex items-start">
-                                  <img src={item.src} alt={item.name} className="w-6 h-6 mr-2 mt-2" />
+                                 
                                   {!item.children ? (
-                                    <Link
+                                    <NavLink
                                       to={item.href}
                                       onClick={() => setSidebarOpen(false)}
                                       className={classNames(
                                         item.current
                                           ? ""
                                           : " hover:text-gray-700",
-                                        "block rounded-md py-2 pr-2 pl-10 text-sm leading-6 font-semibold text-gray-700"
+                                        "flex items-center gap-3 rounded-md py-2 pr-2 pl-10 text-sm leading-6 font-semibold text-gray-700"
                                       )}
                                     >
+                                       <img src={item.src} alt={item.name} className="w-6 h-6" />
+                                       <span>
+
                                       {item.name}
-                                    </Link>
+                                       </span>
+                                    </NavLink>
                                   ) : (
                                     <Disclosure as="div" dir="ltr">
                                       {({ open }) => (
@@ -213,25 +217,28 @@ function App() {
                 </div>
               </div>
 
-              <nav className="flex flex-1 flex-col mt-16 px-6">
+              <nav className="flex flex-1 flex-col mt-16 px-6 overflow-y-hidden">
                 <ul role="list" className="flex flex-1 flex-col gap-y-7">
                   <li>
                     <ul role="list" className="-mx-2 space-y-1">
                       {navigation.map((item) => (
                         <li key={item.name} className="flex items-start gap-3 border-b border-[#5B7380]">
-                          <img src={item.src} alt={item.name} className="w-6 h-6 mr-2 mt-2" />
-                          {!item.children ? (
-                            <Link
+                          
+                          
+                        {!item.children ? (
+                          <NavLink
                               to={item.href}
                               className={classNames(
                                 item.current
                                   ? "bg-gray-50"
-                                  : "hover:bg-gray-50 hover:text-gray-700",
-                                "block rounded-md py-2 pr-2 pl-10 text-sm leading-6 font-semibold text-color4"
+                                  : "hover:bg-green-400 hover:text-gray-700",
+                                " rounded-md py-2 pr-2 pl-10 text-sm leading-6 font-semibold text-color4 flex items-center justify-start gap-3 w-full"
                               )}
+                              
                             >
+                              <img src={item.src} alt={item.name} className="w-6 h-6"  />
                               {item.name}
-                            </Link>
+                            </NavLink>
                           ) : (
                             <Disclosure as="div" dir="ltr">
                               {({ open }) => (
@@ -241,7 +248,7 @@ function App() {
                                       item.current
                                         ? "bg-gray-50"
                                         : "hover:bg-gray-50 hover:text-gray-700",
-                                      "flex justify-end items-center w-full  rounded-md p-2 gap-x-3 text-sm leading-6 font-semibold text-color4"
+                                      "flex justify-between items-center w-full  rounded-md p-2 gap-x-3 text-sm leading-6 font-semibold text-color4"
                                     )}
                                   >
                                     <ChevronRightIcon
@@ -260,9 +267,9 @@ function App() {
                                     className="mt-1 px-2 "
                                   >
                                     {item.children.map((subItem) => (
-                                      <li key={subItem.name} className="list-disc" dir="rtl">
+                                      <li key={subItem.name} className="list-disc mr-6" dir="rtl">
                                         <Disclosure.Button
-                                          as={Link}
+                                          as={NavLink}
                                           to={subItem.href}
                                           className={classNames(
                                             subItem.current

@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import Tiptap from "../components/Tiptap";
 
 export default function EditingExpertise() {
-  const editorRef = useRef(null)
+  const editorRef = useRef(null);
   return (
     <>
       <p className="text-[#000] text-[18px] lg:text-[21px]">
@@ -19,85 +19,115 @@ export default function EditingExpertise() {
       <div className="flex flex-col lg:flex-row mt-12 gap-6">
         <div className="w-full lgw-9/12">
           <div>
-            <div className="flex flex-col lg:flex-row gap-5">
-              <div className="flex items-center justify-between lg:justify-start mt-3 w-full lg:w-1/2 ">
-                <span className="text-[#b4b4b4] text-[15px] lg:w-[114px]">
-                  {" "}
+            <div className="w-full flex flex-col lg:flex-row gap-3">
+              <div className="w-full lg:w-1/2">
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium leading-6 text-gray-900"
+                >
                   تخصص :
-                </span>
-                <input
-                  type="text"
-                  className="w-[80%] lg:w-[100%]  rounded-md border border-[#d9d9d9] py-1.5 px-4 text-[#b4b4b4] text-sm"
-                  placeholder=""
-                />
+                </label>
+                <div className="mt-2">
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 pr-1 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    placeholder=""
+                  />
+                </div>
               </div>
-              <div className="flex items-center justify-between lg:justify-start mt-3 w-full lg:w-1/2">
-                <span className="text-[#b4b4b4] text-[15px] lg:w-[114px]">
-                  {" "}
-                  نامک :
-                </span>
-                <input
-                  type="text"
-                  className="w-[80%] lg:w-[100%] rounded-md border border-[#d9d9d9] py-1.5 px-4 text-[#b4b4b4] text-sm"
-                  placeholder=""
-                />
-              </div>
-            </div>
-            <div className="flex flex-col lg:flex-row gap-5">
-              <div className="flex items-center justify-between lg:justify-start mt-3 w-full lg:w-1/2">
-                <span className="text-[#b4b4b4] text-[15px] lg:w-[114px]">
-                  {" "}
-                  تخصص مادر:
-                </span>
 
-                <select className="w-[80%] lg:w-[100%] rounded-md border border-[#d9d9d9] py-1.5 px-4 text-[#b4b4b4] text-sm">
-                  <option value="option1">گزینه 1</option>
-                  <option value="option2">گزینه 2</option>
-                  <option value="option3">گزینه 3</option>
-                  <option value="option4">گزینه 4</option>
-                  <option value="option5">گزینه 5</option>
-                </select>
+              <div className="w-full lg:w-1/2">
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium leading-6 text-gray-900"
+                >
+                  نامک *
+                </label>
+                <div className="mt-2">
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 pr-1 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    placeholder=""
+                  />
+                </div>
               </div>
-              <div className="flex items-center justify-between lg:justify-start mt-3 w-full lg:w-1/2">
-                <span className="text-[#b4b4b4] text-[15px] lg:w-[114px]">
-                  {" "}
-                  خدمات:
-                </span>
+            </div>
+            <div className="w-full flex flex-col lg:flex-row gap-3 mt-3">
+              <div className="w-full lg:w-1/2">
+                <label
+                  htmlFor="services"
+                  className="block text-sm font-medium leading-6 text-gray-900"
+                >
+                  تخصص مادر :
+                </label>
+                <div className="mt-2">
+                  <select
+                    id="services"
+                    name="services"
+                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 pr-1 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  >
+                    <option value="option1">انتخاب نوع خدمات</option>
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
+                  </select>
+                </div>
+              </div>
 
-                <select className="w-[80%] lg:w-[100%] rounded-md border border-[#d9d9d9] py-1.5 px-4 text-[#b4b4b4] text-sm">
-                  <option value="option1">گزینه 1</option>
-                  <option value="option2">گزینه 2</option>
-                  <option value="option3">گزینه 3</option>
-                  <option value="option4">گزینه 4</option>
-                  <option value="option5">گزینه 5</option>
-                </select>
+              <div className="w-full lg:w-1/2">
+                <label
+                  htmlFor="services"
+                  className="block text-sm font-medium leading-6 text-gray-900"
+                >
+                  خدمات :
+                </label>
+                <div className="mt-2">
+                  <select
+                    id="services"
+                    name="services"
+                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 pr-1 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  >
+                    <option value="option1">انتخاب نوع خدمات</option>
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
+                  </select>
+                </div>
               </div>
             </div>
-            <div className="flex items-center justify-between lg:justify-start mt-3">
-              <span className="text-[#b4b4b4] text-[15px] lg:w-[114px]">
-                عنوان سئو :
-              </span>
-              <input
-                type="text"
-                className="w-[80%] lg:w-[50%] rounded-md border border-[#d9d9d9] py-1.5 px-4 text-[#b4b4b4] text-sm"
-                placeholder=""
-              />
+            <div className="w-full mt-3">
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium leading-6 text-gray-900"
+                >
+                  عنوان سئو :
+                </label>
+                <div className="mt-2">
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 pr-1 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    placeholder=""
+                  />
+                </div>
+              </div>
+           
+            <div className="flex flex-col items-start justify-between mt-3">
+            <label
+                  htmlFor="email"
+                  className="block text-sm font-medium leading-6 text-gray-900 py-2"
+                >
+                   توضیحات :
+                </label>
+              <textarea className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 pr-1 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 h-[165px]"></textarea>
             </div>
-            <div className="flex items-start justify-between mt-3">
-              <span className="text-[#b4b4b4] text-[15px] lg:w-[130px]">
-                {" "}
-                توضیحات سئو :
-              </span>
-              <textarea className="w-[80%] xl:w-full h-[165px] rounded-md border border-[#d9d9d9] py-1.5 px-4 text-[#b4b4b4] text-sm"></textarea>
-            </div>
-            {/* <div className="flex items-center justify-end mt-4">
-            <span className="bg-[#f9e6be] rounded-3xl px-5 py-1 flex items-center justify-center text-[14px] text-[#000]">
-              افزودن خدمات
-            </span>
-          </div> */}
+           
           </div>
           <div className="w-full min-h-[300px] flex items-center justify-center bg-[#f9f9f9] mt-6 border border-[#dbdbdb] rounded-xl">
-            <Tiptap editorRef={editorRef}/>
+            <Tiptap editorRef={editorRef} />
           </div>
         </div>
         <div className="w-full lg:w-3/12 flex justify-center">

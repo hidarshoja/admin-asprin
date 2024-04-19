@@ -76,18 +76,18 @@ const Subscription = () => {
             </div>
             <div className=" flex items-center justify-between lg:justify-center gap-2 flex-wrap lg:flex-nowrap">
               <div className="flex gap-2 items-center">
-                <span className=" py-2 px-6 flex items-center justify-center border rounded-[4px] border-[#304a59] text-[#304a59] text-[8px]">
+                <span className=" py-2 px-6 flex items-center justify-center border rounded-[4px] border-[#304a59] text-[#304a59] text-[8px] cursor-pointer">
                   دوره : یکساله
                 </span>
-                <span className=" py-2 px-6 flex items-center justify-center border rounded-[4px] border-[#304a59] text-[#304a59] text-[8px]">
+                <span className=" py-2 px-6 flex items-center justify-center border rounded-[4px] border-[#304a59] text-[#304a59] text-[8px] cursor-pointer">
                   قیمت : رایگان
                 </span>
               </div>
               <div className="flex gap-2 items-center">
-                <span className=" py-2 px-6 flex items-center justify-center border rounded-[4px] border-[#FFAC03] bg-[#FFAC03] text-[#304a59] text-[8px]">
+                <span className=" py-2 px-6 flex items-center justify-center border rounded-[4px] border-[#FFAC03] bg-[#FFAC03] text-[#304a59] text-[8px] cursor-pointer">
                   ویرایش
                 </span>
-                <span className="py-2 px-6 flex items-center justify-center border rounded-[4px] border-[#FF0303] text-[#FF0303] text-[8px]">
+                <span className="py-2 px-6 flex items-center justify-center border rounded-[4px] border-[#FF0303] text-[#FF0303] text-[8px] cursor-pointer">
                   حذف
                 </span>
               </div>
@@ -104,18 +104,18 @@ const Subscription = () => {
             </div>
             <div className=" flex items-center justify-between lg:justify-center gap-2 flex-wrap lg:flex-nowrap">
               <div className="flex gap-2 items-center">
-                <span className=" py-2 px-6 flex items-center justify-center border rounded-[4px] border-[#304a59] text-[#304a59] text-[8px]">
+                <span className=" py-2 px-6 flex items-center justify-center border rounded-[4px] border-[#304a59] text-[#304a59] text-[8px] cursor-pointer">
                   دوره : یکساله
                 </span>
-                <span className=" py-2 px-6 flex items-center justify-center border rounded-[4px] border-[#304a59] text-[#304a59] text-[8px]">
+                <span className=" py-2 px-6 flex items-center justify-center border rounded-[4px] border-[#304a59] text-[#304a59] text-[8px] cursor-pointer">
                   قیمت : رایگان
                 </span>
               </div>
               <div className="flex gap-2 items-center">
-                <span className=" py-2 px-6 flex items-center justify-center border rounded-[4px] border-[#FFAC03] bg-[#FFAC03] text-[#304a59] text-[8px]">
+                <span className=" py-2 px-6 flex items-center justify-center border rounded-[4px] border-[#FFAC03] bg-[#FFAC03] text-[#304a59] text-[8px] cursor-pointer">
                   ویرایش
                 </span>
-                <span className="py-2 px-6 flex items-center justify-center border rounded-[4px] border-[#FF0303] text-[#FF0303] text-[8px]">
+                <span className="py-2 px-6 flex items-center justify-center border rounded-[4px] border-[#FF0303] text-[#FF0303] text-[8px] cursor-pointer">
                   حذف
                 </span>
               </div>
@@ -132,25 +132,25 @@ const Subscription = () => {
             </div>
             <div className=" flex items-center justify-between lg:justify-center gap-2 flex-wrap lg:flex-nowrap">
               <div className="flex gap-2 items-center">
-                <span className=" py-2 px-6 flex items-center justify-center border rounded-[4px] border-[#304a59] text-[#304a59] text-[8px]">
+                <span className=" py-2 px-6 flex items-center justify-center border rounded-[4px] border-[#304a59] text-[#304a59] text-[8px] cursor-pointer">
                   دوره : یکساله
                 </span>
-                <span className=" py-2 px-6 flex items-center justify-center border rounded-[4px] border-[#304a59] text-[#304a59] text-[8px]">
+                <span className=" py-2 px-6 flex items-center justify-center border rounded-[4px] border-[#304a59] text-[#304a59] text-[8px] cursor-pointer">
                   قیمت : رایگان
                 </span>
               </div>
               <div className="flex gap-2 items-center">
-                <span className=" py-2 px-6 flex items-center justify-center border rounded-[4px] border-[#FFAC03] bg-[#FFAC03] text-[#304a59] text-[8px]">
+                <span className=" py-2 px-6 flex items-center justify-center border rounded-[4px] border-[#FFAC03] bg-[#FFAC03] text-[#304a59] text-[8px] cursor-pointer">
                   ویرایش
                 </span>
-                <span className="py-2 px-6 flex items-center justify-center border rounded-[4px] border-[#FF0303] text-[#FF0303] text-[8px]">
+                <span className="py-2 px-6 flex items-center justify-center border rounded-[4px] border-[#FF0303] text-[#FF0303] text-[8px] cursor-pointer">
                   حذف
                 </span>
               </div>
             </div>
           </div>
         </div>
-          <div className="absolute bottom-[-10px] left-7 bg-[#F9E6BE] rounded-3xl w-[127px] h-6 flex items-center justify-center text-sm text-[#000]">ذخیره</div>
+          <div className="absolute bottom-[-10px] left-7 bg-[#F9E6BE] rounded-3xl w-[127px] h-6 flex items-center justify-center text-sm cursor-pointer text-[#000]">ذخیره</div>
       </div>
     </>
   );

@@ -9,10 +9,10 @@ export default function Dashboard() {
   return (
     <>
       <p className="text-[#000] text-[18px] lg:text-[21px]">داشبورد مدیریت</p>
-      <div className="w-full flex flex-col lg:flex-row mt-6 border border-[#d9d9d9] bg-[#f9f9f9] rounded-xl py-3.5 px-4 gap-1">
+      <div className="w-full flex flex-col lg:flex-row mt-6 border border-[#d9d9d9] bg-[#f9f9f9] rounded-xl py-3.5 px-4 gap-2">
         <div className="w-full lg:w-8/12 flex flex-col items-center justify-center flex-wrap gap-3">
-          <div className="flex items-center justify-center flex-wrap gap-3">
-            <div className="w-[157px] h-[147px] flex flex-col relative rounded-md overflow-hidden">
+          <div className="flex items-center justify-center flex-wrap gap-x-3 gap-y-5">
+            <div className="w-full md:w-[157px] h-[147px] flex flex-col relative rounded-md overflow-hidden">
               <div className="w-full bg-[#FFDDAD] h-[63px]">
                 <div className="w-full flex items-center justify-center flex-col">
                   <div className="text-[#708188] text-sm flex  items-center justify-center rounded-b-md bg-white px-3 py-0.5">
@@ -41,7 +41,7 @@ export default function Dashboard() {
                 </div>
               </div>
             </div>
-            <div className="w-[157px] h-[147px] flex flex-col relative rounded-md overflow-hidden">
+            <div className="w-full md:w-[157px] h-[147px] flex flex-col relative rounded-md overflow-hidden">
               <div className="w-full bg-[#ECFFAD] h-[63px]">
                 <div className="w-full flex items-center justify-center flex-col">
                   <div className="text-[#708188] text-sm flex  items-center justify-center rounded-b-md bg-white px-3 py-0.5">
@@ -70,7 +70,7 @@ export default function Dashboard() {
                 </div>
               </div>
             </div>
-            <div className="w-[157px] h-[147px] flex flex-col relative rounded-md overflow-hidden">
+            <div className="w-full md:w-[157px] h-[147px] flex flex-col relative rounded-md overflow-hidden">
               <div className="w-full bg-[#C9FFDD] h-[63px]">
                 <div className="w-full flex items-center justify-center flex-col">
                   <div className="text-[#708188] text-sm flex  items-center justify-center rounded-b-md bg-white px-3 py-0.5">
@@ -99,7 +99,7 @@ export default function Dashboard() {
                 </div>
               </div>
             </div>
-            <div className="w-[157px] h-[147px] flex flex-col relative rounded-md overflow-hidden">
+            <div className="w-full md:w-[157px] h-[147px] flex flex-col relative rounded-md overflow-hidden">
               <div className="w-full bg-[#CBF3FF] h-[63px]">
                 <div className="w-full flex items-center justify-center flex-col">
                   <div className="text-[#708188] text-sm flex  items-center justify-center rounded-b-md bg-white px-3 py-0.5">
@@ -128,7 +128,7 @@ export default function Dashboard() {
                 </div>
               </div>
             </div>
-            <div className="w-[157px] h-[147px] flex flex-col relative rounded-md overflow-hidden">
+            <div className="w-full md:w-[157px] h-[147px] flex flex-col relative rounded-md overflow-hidden">
               <div className="w-full bg-[#ECE3FE] h-[63px]">
                 <div className="w-full flex items-center justify-center flex-col">
                   <div className="text-[#708188] text-sm flex  items-center justify-center rounded-b-md bg-white px-3 py-0.5">
@@ -169,13 +169,13 @@ export default function Dashboard() {
         </div>
 
         <div className="w-full flex flex-col lg:w-4/12 gap-7">
-          <div className="w-full h-[200px] rounded-lg border border-[#d9d9d9] bg-[#fbfbfb] mt-7 lg:mt-0">
+          <div className="w-full h-[200px] rounded-lg border border-[#d9d9d9] bg-[#fbfbfb] mt-8 lg:mt-2">
             <ChartComonent />
           </div>
-          <div className="w-full h-[200px] rounded-lg border border-[#d9d9d9] bg-[#fbfbfb]">
+          <div className="w-full h-[200px] rounded-lg border border-[#d9d9d9] bg-[#fbfbfb] lg:mt-2">
           <ChartComonent />
           </div>
-          <div className="w-full text-[#708188] h-[200px] rounded-lg border border-[#d9d9d9] bg-[#fbfbfb] relative">
+          <div className="w-full text-[#708188] h-[200px] rounded-lg border border-[#d9d9d9] lg:mt-2 bg-[#fbfbfb] relative">
           <div className="absolute left-1/2 top-0 bottom-0 bg-[#d9d9d9] w-[1px]"></div>
           <div className="absolute left-1/2 translate-x-[-50%] top-[-10px] bg-white px-2 rounded-lg border-b text-[#708188]">بازدید خدمات</div>
                 <div className="w-full border-b flex items-center">

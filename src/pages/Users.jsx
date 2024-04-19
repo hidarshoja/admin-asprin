@@ -5,7 +5,7 @@ export default function Users() {
       <div className="flex items-center justify-between">
         <p className="text-[#000] text-[18px] lg:text-[21px]">لیست کاربران</p>
         <Link to="/add-user">
-          <span className="bg-[#FFAC03] rounded-3xl px-5 py-1 gap-3 flex items-center justify-between text-[14px] text-[#fff] cursor-pointer">
+          <span className="bg-color4 hover:bg-color3 rounded-lg px-5 py-1 gap-3 flex items-center justify-between text-[14px] text-[#fff] cursor-pointer">
             <span>+</span>
             <span>افزودن کاربر</span>
           </span>
@@ -174,9 +174,7 @@ export default function Users() {
             <div className="w-full">
               <div className="flex items-center justify-start mt-3 px-5 gap-3 flex-wrap">
                 <div className="flex items-center gap-1">
-                  <label for="input1" className="text-[#596271] text-[10px]">
-                    عنوان:
-                  </label>
+                  <label className="text-[#596271] text-[10px]">عنوان:</label>
                   <input
                     id="input1"
                     type="text"
@@ -184,9 +182,7 @@ export default function Users() {
                   />
                 </div>
                 <div className="flex items-center gap-1">
-                  <label for="input1" className="text-[#596271] text-[10px]">
-                    نقش:
-                  </label>
+                  <label className="text-[#596271] text-[10px]">نقش:</label>
                   <input
                     id="input1"
                     type="text"
@@ -195,7 +191,7 @@ export default function Users() {
                   />
                 </div>
                 <div className="flex items-center gap-1">
-                  <label for="input1" className="text-[#596271] text-[10px]">
+                  <label className="text-[#596271] text-[10px]">
                     شماره موبایل:
                   </label>
                   <input
@@ -206,7 +202,7 @@ export default function Users() {
                   />
                 </div>
                 <div className="flex items-center gap-1">
-                  <label for="input1" className="text-[#596271] text-[10px]">
+                  <label className="text-[#596271] text-[10px]">
                     نام نمایشی:
                   </label>
                   <input
@@ -217,7 +213,7 @@ export default function Users() {
                   />
                 </div>
                 <div className="flex items-center gap-1">
-                  <label for="input1" className="text-[#596271] text-[10px]">
+                  <label className="text-[#596271] text-[10px]">
                     {" "}
                     آدرس URL ::
                   </label>
@@ -230,12 +226,12 @@ export default function Users() {
                 </div>
               </div>
             </div>
-            <div className="mt-4 w-full flex items-center justify-end px-4 gap-2">
-              <span className="rounded-[10px] flex items-center justify-center text-[#000] text-[10px] bg-[#EEEDEB] p-0.5 px-4 cursor-pointer">
+            <div className="mt-4 w-full flex items-center justify-end px-4 gap-2 py-3">
+              <span className="bg-[#a3a2a1] rounded-lg px-5 py-1 gap-3 flex items-center justify-between text-[14px] text-[#fff] cursor-pointer">
                 انصراف
               </span>
-              <span className="w-[126px] py-0.5 px-2 bg-[#f8e5bf] rounded-[10px] flex items-center justify-center text-[#000] text-[10px] cursor-pointer">
-                ذخیره
+              <span className="bg-color4 hover:bg-color3 rounded-lg px-5 py-1 gap-3 flex items-center justify-between text-[14px] text-[#fff] cursor-pointer">
+                <span>ذخیره کاربر</span>
               </span>
             </div>
           </div>
@@ -445,71 +441,104 @@ export default function Users() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col items-start justify-start mt-3 px-5 gap-3 flex-wrap w-[80%] mx-auto">
-            <div className="flex items-center gap-1 w-full">
-              <label for="input1" className="text-[#596271] text-[10px]">
-                عنوان:
-              </label>
-              <input
-                id="input1"
-                type="text"
-                className="border border-[#dddddc] rounded-lg h-[19px] w-full px-2 text-[#b4b4b4] text-[11px]"
-              />
-            </div>
-            <div className="flex items-center gap-1 w-full">
-              <label for="input1" className="text-[#596271] text-[10px]">
-                نقش:
-              </label>
-              <input
-                id="input1"
-                type="text"
-                className="border border-[#dddddc] rounded-lg h-[19px] px-2 text-[#b4b4b4] text-[11px] w-full"
-                placeholder="مدیر کل"
-              />
-            </div>
-            <div className="flex items-center gap-1 w-full">
-              <label for="input1" className="text-[#596271] text-[10px]">
-                شماره موبایل:
-              </label>
-              <input
-                id="input1"
-                type="text"
-                className="border border-[#dddddc] rounded-lg h-[19px]  px-2 text-[#b4b4b4] text-[11px] w-full"
-                placeholder="09159886129"
-              />
-            </div>
-            <div className="flex items-center gap-1 w-full">
-              <label for="input1" className="text-[#596271] text-[10px]">
-                نام نمایشی:
-              </label>
-              <input
-                id="input1"
-                type="text"
-                className="border border-[#dddddc] rounded-lg h-[19px]  px-2 text-[#b4b4b4] text-[11px] w-full"
-                placeholder="محمد فرصیاد"
-              />
-            </div>
-            <div className="flex items-center gap-1 w-full">
-              <label for="input1" className="text-[#596271] text-[10px]">
-                {" "}
-                آدرس URL ::
-              </label>
-              <input
-                id="input1"
-                type="text"
-                className="border w-full border-[#dddddc] rounded-lg h-[19px]  px-2 text-[#b4b4b4] text-[11px]"
-                placeholder=""
-              />
-            </div>
+          <div className="flex flex-col items-start justify-start mt-3  gap-3 flex-wrap w-[80%] mx-auto">
+            <form action="" className="w-full">
+              <div className="w-full mt-3">
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium leading-4 text-color3"
+                >
+                  عنوان :
+                </label>
+                <div className="mt-2">
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 pr-1 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    placeholder=""
+                  />
+                </div>
+              </div>
+              <div className="w-full mt-3">
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium leading-4 text-color3"
+                >
+                  نقش :
+                </label>
+                <div className="mt-2">
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 pr-1 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    placeholder="مدیر کل"
+                  />
+                </div>
+              </div>
+              <div className="w-full mt-3">
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium leading-4 text-color3"
+                >
+                  شماره موبایل :
+                </label>
+                <div className="mt-2">
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 pr-1 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    placeholder="09159886129"
+                  />
+                </div>
+              </div>
+              <div className="w-full mt-3">
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium leading-4 text-color3"
+                >
+                  نام نمایشی :
+                </label>
+                <div className="mt-2">
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 pr-1 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    placeholder="محمد"
+                  />
+                </div>
+              </div>
+              <div className="w-full mt-3">
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium leading-4 text-color3"
+                >
+                  آدرس URL :
+                </label>
+                <div className="mt-2">
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 pr-1 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    placeholder="نامک (نشانه url)"
+                  />
+                </div>
+              </div>
+              <div className="flex items-center justify-end gap-3 mt-4 py-3">
+              <button className="bg-orange-600 hover:bg-color3 rounded-lg  py-1 px-8 text-white text-sm flex items-center justify-center">
+                  انصراف
+                </button>
+                <button className="bg-color4 hover:bg-color3 rounded-lg  py-1 px-8 text-white text-sm flex items-center justify-center">
+                  ذخیره
+                </button>
+              </div>
+            </form>
           </div>
-          <div className="mt-4 w-full flex items-center justify-end px-4 gap-2">
-            <span className="rounded-[10px] flex items-center justify-center text-[#000] text-[10px] bg-[#EEEDEB] p-0.5 px-4 cursor-pointer">
-              انصراف
-            </span>
-            <span className="w-[126px] py-0.5 px-2 bg-[#f8e5bf] rounded-[10px] flex items-center justify-center text-[#000] text-[10px] cursor-pointer">
-              ذخیره
-            </span>
-          </div>
+          
         </div>
       </div>
     </>
