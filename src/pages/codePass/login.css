@@ -1,0 +1,10 @@
+.loginDiv  {
+    background-image: url("/img/login.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.mobileLogin{
+    background-image: url("/img//mobileLogin.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}

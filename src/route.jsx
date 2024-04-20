@@ -23,6 +23,7 @@ import EditLocation from "./pages/EditLocation";
 import Dashboard from "./pages/Dashboard";
 import ServiceProviders from "./pages/ServiceProviders";
 import AddServices from "./pages/AddServices";
+import CodePage from "./pages/codePass/page";
 
 export const route = createBrowserRouter([
     {
@@ -122,6 +123,10 @@ export const route = createBrowserRouter([
             {
                 path: 'login',
                 element: <Login />
+            },
+            {
+                path: 'codePage',
+                element: <CodePage />
             }
         ]
     }

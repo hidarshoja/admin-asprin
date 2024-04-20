@@ -3,7 +3,7 @@ import React from "react";
 import "./login.css";
 
 
-export default function Login() {
+export default function CodePage() {
 
 
 
@@ -17,24 +17,24 @@ export default function Login() {
             دکتر آسپرین
           </h3>
           <span className="text-colorText text-sm font-[400px] mt-2">
-            مکان یاب سلامت
+           کد تایید را وارد کنید
           </span>
           <div
             className="flex  w-[190px] mx-auto rounded-md border border-1 border-[#304958 bg-white] h-10 overflow-hidden mt-6"
             dir="ltr"
           >
             <div className="w-1/5 border-r-2 flex items-center justify-center text-colorText text-[12px]">
-              +98
+              code
             </div>
             <input
               type="text"
-              placeholder="9122712416"
+              placeholder=""
               className="text-[#B4B4B4] text-[12px] px-1 w-4/5 outline-none"
             />
           </div>
           <div className="w-full mt-9">
             <button className="rounded-md bg-colorText shadow-lg text-white text-[13px] font-normal w-[77%] mx-auto flex items-center justify-center px-4 py-3 bg-[#304958]">
-            ورود/عضویت خدمات دهندگان
+                ارسال کد تایید 
             </button>
           </div>
         </div>
